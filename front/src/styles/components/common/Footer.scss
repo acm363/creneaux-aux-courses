@@ -1,0 +1,21 @@
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+
+  // Ensure the footer sticks to the bottom of the page.
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .phantom-footer-top {
+    display: block;
+    padding: 20px;
+    height: 60px;
+    width: 100%;
+  }
+
+  .content {
+    flex: 1;
+  }
+}

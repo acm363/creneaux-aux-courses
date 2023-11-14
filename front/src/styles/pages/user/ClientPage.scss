@@ -1,0 +1,12 @@
+.client-page {
+
+  min-height: 70% !important;
+  display: flex;
+  flex-direction: column;
+
+  .body {
+    height: 100% !important;
+    position: relative;
+    flex: 1;
+  }
+}

@@ -1,0 +1,16 @@
+// colors
+$bc-color: white;
+$input-bc-color: #f8f9fa;
+$primary-color: #ffc107;
+$secondary-color: #F8F9FA;
+
+
+// keyframes
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

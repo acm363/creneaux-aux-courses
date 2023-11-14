@@ -1,0 +1,186 @@
+.popup-container {
+	z-index: 999;    // Make sure it's above other content
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+
+	.popup-content {
+
+		input[type="number"] {
+			-webkit-appearance: textfield;
+			-moz-appearance: textfield;
+			appearance: textfield;
+		}
+
+		input[type=number]::-webkit-inner-spin-button,
+		input[type=number]::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+		}
+
+		.number-input {
+			border: 2px solid #ddd;
+			display: inline-flex;
+		}
+
+		.number-input,
+		.number-input * {
+			box-sizing: border-box;
+		}
+
+		.number-input button {
+			outline:none;
+			-webkit-appearance: none;
+			background-color: transparent;
+			border: none;
+			align-items: center;
+			justify-content: center;
+			width: 3rem;
+			height: 3rem;
+			cursor: pointer;
+			margin: 0;
+			position: relative;
+		}
+
+		.number-input button:after {
+			display: inline-block;
+			position: absolute;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: '\f077';
+			transform: translate(-50%, -50%) rotate(180deg);
+		}
+		.number-input button.plus:after {
+			transform: translate(-50%, -50%) rotate(0deg);
+		}
+
+		.number-input input[type=number] {
+			font-family: sans-serif;
+			max-width: 5rem;
+			padding: .5rem;
+			border: solid #ddd;
+			border-width: 0 2px;
+			font-size: 2rem;
+			height: 3rem;
+			font-weight: bold;
+			text-align: center;
+		}
+		background: #202529;
+		color: #fff;
+		padding: 20px;
+		position: relative;
+		width: 500px;
+		height: 350px;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+		.popup-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-direction: row;
+			.close-btn{
+				color: #fff;
+				margin-top: -20px;
+				margin-right: -10px;
+
+				&:hover {
+					color: red;
+					transform: rotate(360deg) scale(1.2);
+					transition: all 0.3s ease-in-out;
+				}
+			}
+		}
+
+		.popup-body {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			// align input fields vertically
+			div{
+				margin-bottom: 10px;
+				label{
+					width:50%;
+					float:left;
+				}
+				input {
+					width:50%;
+					float:right;
+					text-align: right;
+					appearance: none;
+					border: none;
+					box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+					border-radius: 3px;
+				}
+				select{
+					width:50%;
+					float:right;
+					text-align: right;
+					appearance: none;
+					border: none;
+					box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+					border-radius: 3px;
+					padding-right: 10px;
+				}
+				.date-picker{
+					width:70%;
+					float:right;
+				}
+			}
+			.type{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				.btn-group{
+					width: 50%;
+					display: flex;
+					flex-direction: row;
+				}
+			}
+
+		}
+
+		.close-btn {
+			background: none;
+			border: none;
+			font-size: 24px;
+			cursor: pointer;
+			padding: 0;
+			margin: 0;
+			border-radius: 10px;
+			// line-height: 1;
+		}
+
+		.popup-actions {
+
+			display: flex;
+			flex-direction: row-reverse;
+
+			.notification{
+				width: 90%;
+
+				.notification-text {
+					z-index: 1000;    // Make sure it's above other content
+					color: #FF5B75;
+				}
+
+			}
+			button{
+				width: 10%;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,38 @@
+.slot-home-page {
+
+  //  // position: relative;
+  height: 70% !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+
+    display: flex;
+
+    flex-direction: column;
+
+    .header-top {
+      width: 100%;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+.body {
+  flex: 1;
+
+  .information-card {
+    bottom: 10%;
+    color: #f8f9fa;
+    width: 50em;
+    margin: 10em 15em;
+  }
+
+  flex: 1;
+
+}

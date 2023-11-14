@@ -1,0 +1,20 @@
+.admin-holiday-page {
+  min-height: 40em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+
+  .body {
+    position: relative;
+    flex: 1;
+  }
+}

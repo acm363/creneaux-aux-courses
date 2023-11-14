@@ -1,0 +1,19 @@
+.admin-slot-page {
+  height: 100% !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+
+  .body {
+    flex: 1;
+  }
+}
